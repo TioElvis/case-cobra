@@ -36,20 +36,18 @@ export default function Page() {
                 i tuoi ricordi, non solo la tua cover per telefono.{" "}
               </p>
               <ul className="flex flex-col items-center mt-8 space-y-2 text-left font-medium sm:items-start">
-                <div className="space-y-2">
-                  <li className="flex gap-1.5 items-center text-left">
-                    <CheckIcon className="w-5 h-5 shrink-0 text-primary" />
-                    Materiale di alta qualità e resistente
-                  </li>
-                  <li className="flex gap-1.5 items-center text-left">
-                    <CheckIcon className="w-5 h-5 shrink-0 text-primary" />
-                    Garanzia di stampa per 5 anni
-                  </li>
-                  <li className="flex gap-1.5 items-center text-left">
-                    <CheckIcon className="w-5 h-5 shrink-0 text-primary" />
-                    Supporto per i modelli moderni di iPhone
-                  </li>
-                </div>
+                <li className="flex gap-1.5 items-center text-left">
+                  <CheckIcon className="w-5 h-5 shrink-0 text-primary" />
+                  Materiale di alta qualità e resistente
+                </li>
+                <li className="flex gap-1.5 items-center text-left">
+                  <CheckIcon className="w-5 h-5 shrink-0 text-primary" />
+                  Garanzia di stampa per 5 anni
+                </li>
+                <li className="flex gap-1.5 items-center text-left">
+                  <CheckIcon className="w-5 h-5 shrink-0 text-primary" />
+                  Supporto per i modelli moderni di iPhone
+                </li>
               </ul>
               <div className="flex flex-col gap-5 mt-12 items-center sm:flex-row sm:items-start">
                 <div className="flex -space-x-4">
