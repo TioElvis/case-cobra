@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // @components
 import { Navbar } from "./components/navbar";
+import { Footer } from "./components/footer";
 
 const inter = Inter({ weight: ["500"], subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: Readonly<Props>) {
         <main className="flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
