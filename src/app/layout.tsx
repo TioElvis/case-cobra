@@ -4,12 +4,12 @@ import { Inter } from "next/font/google";
 // @components
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
+// @libs
+import { CreateMetadata } from "@/lib/metadata";
 
 const inter = Inter({ weight: ["500"], subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Case-Cobra | custom high-quality phone cases",
-};
+export const metadata: Metadata = CreateMetadata();
 
 interface Props {
   children: React.ReactNode;
