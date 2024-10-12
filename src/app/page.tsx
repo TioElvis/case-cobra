@@ -84,7 +84,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full h-fit flex justify-center px-8 col-span-full mt-32 sm:px-16 md:px-0 lg:col-span-1 lg:mx-0 lg:mt-20">
+          <div className="w-full h-fit flex justify-center px-8 col-span-full mt-16 sm:px-16 md:px-0 lg:col-span-1 lg:mx-0 lg:mt-20">
             <div className="relative md:max-w-xl">
               <img
                 src="/your-image.png"
