@@ -104,12 +104,11 @@ export default function Page() {
         <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
           <div className="flex flex-col items-center gap-4 sm:gap-6 lg:flex-row">
             <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-gray-900 text-5xl md:text-6xl">
-              What our{" "}
+              Cosa dicono i nostri{" "}
               <span className="relative px-2">
-                customers{" "}
+                clienti{" "}
                 <UnderlineIcon className="sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-600" />
-              </span>{" "}
-              say
+              </span>
             </h2>
             <img
               src="/snake-2.png"
