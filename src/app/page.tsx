@@ -119,12 +119,12 @@ export default function Page() {
           <div className="max-w-2xl mx-auto grid grid-cols-1 px-4 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <Comment
               user={{ name: "Jonathan", isVerified: true }}
-              description="The case feels durable and I even got a compliment on the design. Had the case for two and a half months now and the image is super clear, on the case I had before, the image started fading into yellow-ish color after a couple weeks. Love it."
+              description="La custodia sembra resistente e ho persino ricevuto un complimento per il design. La uso da due mesi e mezzo e l'immagine è ancora super nitida. Sulla custodia che avevo prima, l'immagine ha iniziato a sbiadire in un colore giallastro dopo un paio di settimane. La adoro!"
               image="/users/user-1.png"
             />
             <Comment
               user={{ name: "Josh", isVerified: true }}
-              description="I usually keep my phone together with my keys in my pocket and that led to some pretty heavy scratchmarks on all of my last phone cases. This one, besides a barely noticeable scratch on the corner, looks brand new after about half a year. I dig it."
+              description="Di solito tengo il telefono insieme alle chiavi in tasca, e questo ha causato dei graffi piuttosto evidenti su tutte le mie custodie precedenti. Questa, a parte un graffio appena visibile su un angolo, sembra nuova anche dopo circa sei mesi. Mi piace un sacco."
               image="/users/user-4.jpg"
             />
           </div>
