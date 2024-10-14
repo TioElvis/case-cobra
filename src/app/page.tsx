@@ -3,9 +3,10 @@ import { CheckIcon, StarIcon } from "lucide-react";
 // @components
 import { Each } from "@/components/each";
 import { Phone } from "@/components/phone";
+import { Comment } from "@/components/comment";
+import { Reviews } from "@/components/reviews";
 import { UnderlineIcon } from "@/components/underline-icon";
 import { MaxWidthWrapper } from "@/components/max-width-wrapper";
-import { Comment } from "@/components/comment";
 
 const USERS_IMAGES = [
   "/users/user-1.png",
@@ -129,7 +130,12 @@ export default function Page() {
             />
           </div>
         </MaxWidthWrapper>
-        <div className="pt-16"></div>
+        <div className="pt-24">
+          <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-gray-900 text-5xl md:text-6xl">
+            Alcuni Esempi
+          </h2>
+          <Reviews />
+        </div>
       </section>
     </div>
   );
