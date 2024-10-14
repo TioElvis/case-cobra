@@ -1,10 +1,12 @@
+import Link from "next/link";
 import Image from "next/image";
-import { CheckIcon, StarIcon } from "lucide-react";
+import { ArrowRightIcon, CheckIcon, StarIcon } from "lucide-react";
 // @components
 import { Each } from "@/components/each";
 import { Phone } from "@/components/phone";
 import { Comment } from "@/components/comment";
 import { Reviews } from "@/components/reviews";
+import { buttonVariants } from "@/components/ui/button";
 import { UnderlineIcon } from "@/components/underline-icon";
 import { MaxWidthWrapper } from "@/components/max-width-wrapper";
 
@@ -103,11 +105,11 @@ export default function Page() {
       <section className="py-24 bg-slate-100">
         <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
           <div className="flex flex-col items-center gap-4 sm:gap-6 lg:flex-row">
-            <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-gray-900 text-5xl md:text-6xl">
+            <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-black text-5xl md:text-6xl">
               Cosa dicono i nostri{" "}
               <span className="relative px-2">
                 clienti{" "}
-                <UnderlineIcon className="sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-600" />
+                <UnderlineIcon className="sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-primary" />
               </span>
             </h2>
             <img
@@ -130,11 +132,73 @@ export default function Page() {
           </div>
         </MaxWidthWrapper>
         <div className="pt-24">
-          <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-gray-900 text-5xl md:text-6xl">
+          <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-black text-5xl md:text-6xl">
             Alcuni Esempi
           </h2>
           <Reviews />
         </div>
+      </section>
+      {/*  */}
+      <section>
+        <MaxWidthWrapper className="py-24">
+          <div className="mb-12 px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl sm:text-center">
+              <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-black text-5xl md:text-6xl">
+                Crea subito la tua{" "}
+                <span className="relative px-2 bg-primary text-white">
+                  cover
+                </span>
+              </h2>
+            </div>
+          </div>
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <div className="flex flex-col items-center relative grid-cols-2 gap-40 md:grid">
+              <img
+                src="/arrow.png"
+                alt=""
+                className="absolute top-[25rem] md:top-1/2 -translate-y-1/2
+                 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0"
+              />
+              <div className="w-full h-80 max-w-sm relative md:h-full md:justify-self-end">
+                <img
+                  src="/horse.jpg"
+                  alt=""
+                  className="w-full h-full object-cover rounded-sm shadow-2xl"
+                />
+              </div>
+              <Phone className="w-60" imgSrc="/horse_phone.jpg" />
+            </div>
+          </div>
+          <ul className="w-fit max-w-prose mx-auto mt-12 space-y-2 sm:text-lg">
+            <li className="w-fit">
+              <CheckIcon className="w-5 h-5 text-primary inline mr-1.5" />
+              Materiale di alta qualità e resistente
+            </li>
+            <li className="w-fit">
+              <CheckIcon className="w-5 h-5 text-primary inline mr-1.5" />
+              Garanzia di stampa per 5 anni
+            </li>
+            <li className="w-fit">
+              <CheckIcon className="w-5 h-5 text-primary inline mr-1.5" />
+              Supporto per i modelli moderni di iPhone
+            </li>
+            <li className="w-fit">
+              <CheckIcon className="w-5 h-5 text-primary inline mr-1.5" />
+              Supporto per i modelli moderni di iPhone
+            </li>
+          </ul>
+          <div className="flex justify-center">
+            <Link
+              href="/configure/upload"
+              className={buttonVariants({
+                size: "lg",
+                className: "mx-auto mt-6",
+              })}
+            >
+              Create your case now <ArrowRightIcon className="w-4 h-4 ml-1.5" />
+            </Link>
+          </div>
+        </MaxWidthWrapper>
       </section>
     </div>
   );
