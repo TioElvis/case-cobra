@@ -193,8 +193,7 @@ export default function Page() {
               className={buttonVariants({
                 size: "lg",
                 className: "mx-auto mt-6",
-              })}
-            >
+              })}>
               Crea la tua cover adesso{" "}
               <ArrowRightIcon className="w-4 h-4 ml-1.5" />
             </Link>
