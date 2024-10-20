@@ -26,7 +26,8 @@ export async function Navbar() {
                   className={buttonVariants({
                     size: "sm",
                     variant: "ghost",
-                  })}>
+                  })}
+                >
                   Esci
                 </Link>
                 {isAdmin === true && (
@@ -35,7 +36,8 @@ export async function Navbar() {
                     className={buttonVariants({
                       size: "sm",
                       variant: "ghost",
-                    })}>
+                    })}
+                  >
                     Dashboard
                   </Link>
                 )}
@@ -47,7 +49,8 @@ export async function Navbar() {
                   className={buttonVariants({
                     size: "sm",
                     variant: "ghost",
-                  })}>
+                  })}
+                >
                   Registrati
                 </Link>
                 <Link
@@ -55,7 +58,8 @@ export async function Navbar() {
                   className={buttonVariants({
                     size: "sm",
                     variant: "ghost",
-                  })}>
+                  })}
+                >
                   Login
                 </Link>
               </>
@@ -66,7 +70,8 @@ export async function Navbar() {
               className={buttonVariants({
                 size: "sm",
                 className: "hidden items-center gap-1 sm:flex",
-              })}>
+              })}
+            >
               Crea una cover
               <ArrowRightIcon className="w-4 h-4 ml-1.5" />
             </Link>

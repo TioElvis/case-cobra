@@ -195,7 +195,8 @@ export default function Page() {
                 className: "mx-auto mt-6",
               })}
             >
-              Create your case now <ArrowRightIcon className="w-4 h-4 ml-1.5" />
+              Crea la tua cover adesso{" "}
+              <ArrowRightIcon className="w-4 h-4 ml-1.5" />
             </Link>
           </div>
         </MaxWidthWrapper>
