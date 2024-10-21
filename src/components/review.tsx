@@ -17,7 +17,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   src: string;
 }
 
-export function Review({ src, className, ...props }: Props) {
+export function Review({ src, className, ...props }: Readonly<Props>) {
   const animationDelay =
     POSSIBLE_ANIMATION_DELAYS[
       Math.floor(Math.random() * POSSIBLE_ANIMATION_DELAYS.length)
@@ -27,8 +27,7 @@ export function Review({ src, className, ...props }: Props) {
     <div
       className={cn("animate-fade-in p-8 w-80", className)}
       style={{ animationDelay }}
-      {...props}
-    >
+      {...props}>
       <Phone imgSrc={src} />
     </div>
   );

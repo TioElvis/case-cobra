@@ -18,7 +18,7 @@ export function ReviewColumn({
   className,
   reviewClassName,
   msPerPixel = 0,
-}: Props) {
+}: Readonly<Props>) {
   const [columnHigh, setColumnHigh] = useState(0);
 
   const ref = useRef<HTMLDivElement | null>(null);
@@ -45,8 +45,7 @@ export function ReviewColumn({
     <div
       ref={ref}
       className={cn("animate-marquee space-y-8 py-4", className)}
-      style={{ "--marquee-duration": duration } as React.CSSProperties}
-    >
+      style={{ "--marquee-duration": duration } as React.CSSProperties}>
       <Each
         of={reviews.concat(reviews)}
         render={(src, index) => {

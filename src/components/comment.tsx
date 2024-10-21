@@ -14,7 +14,7 @@ interface Props {
   description: string;
 }
 
-export function Comment({ user, image, description }: Props) {
+export function Comment({ user, image, description }: Readonly<Props>) {
   return (
     <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
       <div className="flex gap-0.5 mb-2">
@@ -41,7 +41,7 @@ export function Comment({ user, image, description }: Props) {
           {user.isVerified === true && (
             <div className="flex gap-1.5 items-center text-zinc-600">
               <CheckIcon className="w-4 h-4 stroke-[3px] text-primary" />
-              <p className="text-sm">Verified Purchase</p>
+              <p className="text-sm">Acquisto verificato</p>
             </div>
           )}
         </div>

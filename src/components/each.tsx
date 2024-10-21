@@ -5,6 +5,6 @@ interface Props<TData> {
   render: (item: TData, index: number) => React.ReactNode;
 }
 
-export function Each<TData>({ of, render }: Props<TData>) {
+export function Each<TData>({ of, render }: Readonly<Props<TData>>) {
   return Children.toArray(of.map((item, index) => render(item, index)));
 }
